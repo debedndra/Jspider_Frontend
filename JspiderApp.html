@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Fontawesome/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.css">
+    <style>
+        *{
+            margin: 0.3px;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+             column-gap: 80px;
+
+        }
+        nav>.two{
+           margin-left: 100px;
+           font-weight: bolder;
+           
+        }
+        nav>.two>.home{
+           color: orange;
+           border-bottom: 4px solid orange;
+        }
+        nav>.two>.en{
+           color: orange;
+        }
+        nav>.two>a:hover{
+            /* background-color: azure; */
+            color: orange;
+        }
+       nav>.two>a{
+       
+        text-decoration: none;
+        margin-right: 14px;
+        font-size: 17px;
+         border: 1px solid black; 
+       }
+
+       nav>.one>h1::first-letter{
+        color: orange;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .five{
+        background-color: rgb(247, 244, 244);
+        border-radius: 6px;
+        width: 250px;
+         height: 180px; 
+        display: none;
+        position:absolute;
+
+       }
+       
+       a{
+           
+            padding: 5px;
+            font-size: 15px;
+            text-decoration: none;
+            display:inline-block;
+        }
+        .four:hover .five{
+            display: block;
+        }
+        .three{
+            display: flex;
+            flex-direction: row;
+            column-gap: 2px;
+            
+            justify-content:left;
+        }
+       .five>a{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        
+       }
+       .four>span{
+        font-size:12.7px;
+        
+       }
+       .spanred{
+        display: flex;
+        color:aliceblue;
+        background-color: red;
+        padding: 4px 10px;
+        column-gap: 8px;
+       }
+       .spangreen{
+        display: flex;
+        color:aliceblue;
+        background-color: green;
+        padding: 4px 10px;
+        column-gap: 8px;
+
+       }
+       .spandgreen{
+        display: flex;
+        color:aliceblue;
+        background-color: rgba(0, 25, 3, 0.972);
+        padding: 4px 10px;
+        column-gap: 8px;
+       }
+
+       .spandblue{
+        display: flex;
+        color:aliceblue;
+        background-color: rgba(0, 1, 5, 0.972);
+        padding: 4px 10px;
+        column-gap: 8px;
+
+       }
+       .spangrey{
+        display: flex;
+        color:aliceblue;
+        background-color: rgb(63, 63, 63);
+        padding: 4px 10px;
+        column-gap: 8px;
+
+       }
+       .spanblue{
+        display: flex;
+        color:aliceblue;
+        background-color: rgb(63, 7, 232);
+        padding: 4px 10px;
+        column-gap: 8px;
+
+       }
+
+       .mid{
+        display: flex;
+        flex-direction: row;
+    
+        justify-content: space-around;
+
+       }
+       .midone{
+        width:480px;
+        border: 2px solid black ; 
+        border-radius: 0px 0px 5px 5px;
+       }
+       .midone>p{
+        padding: 5px;
+        line-height: 26px;
+        word-spacing: 6px;
+       }
+       #midone>h4{
+        color: orange;
+        text-decoration: underline;
+       }
+       .midone>#midtwo>a>span{
+        color: orange;
+        font-weight: bolder;
+       }
+       #midone{
+        background-image: url(mechpic.jpg);
+        color: white;
+        padding: 6px 25px;
+        border-radius: 0px 0px 5px 5px;
+       }
+       #midtwo{
+        background-color: whitesmoke;
+        border-radius: 5px;
+        border-left: 5px solid grey;
+        border-right: 5px solid grey;
+        margin: 8px;
+        padding: 5px;
+       }
+       #midtwo>a{
+        color:gray;
+        font-size: 17px;
+       }
+       #midthree{
+        color: aliceblue;
+        background-color: grey;
+        margin: 5px 0px 5px 10px;
+        width: 450px;
+        padding: 3px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       }
+       #midthreesub{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 5px;
+        
+       }
+       #midthreesubsub{
+         border: 2px solid black; 
+        padding: 4px 8px;
+        border-radius: 4px;
+        color: white;
+
+       }
+       #midh4{
+        padding: 3px;
+        color:orange;
+        text-decoration: underline;
+       }
+       #wanttohire{
+        color: white;
+        border-radius: 5px;
+        width: 200px;
+        padding: 10px;
+        margin: 10px 130px;
+
+       }
+       .gridone{
+        width:99%;
+        height: 115px;
+        display: grid;
+         border: 2px solid black; 
+        grid-template-columns: repeat(6,auto);
+        grid-template-rows: 115px;
+        gap:8px;
+        padding: 5px;
+
+
+       }
+       .gridone>div{
+         border: 2px solid black; 
+        text-align: center;
+       
+       }
+       .gridone>div>.one{
+        background-color: rgb(24, 24, 24);
+        color: orange;
+        padding: 13px;
+        font-weight: bolder;
+        
+       }
+       .gridone>div>.two{
+        padding: 12px;
+        background-color: white;
+        font-size: 17px;
+        border-radius: 0px 0px 5px 5px;
+
+       }
+       .gridtwo{
+        margin: 15px auto;
+         border: 2px solid black; 
+        width:90%;
+         height: 115px; 
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: 140px;
+        gap:24px;
+        padding: 10px;
+       }
+       .gridtwo>.item1{
+        background-color: white;
+        border-radius: 0px 0px 5px 5px;
+         border: 2px solid black; 
+        grid-column: 1/4;
+        grid-row: 1/2;
+
+       }
+       .gridtwo>.item1>.subitem1{
+        background-color: rgb(54, 64, 54);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-weight: bolder;
+       }
+       .gridtwo>.item1>div>p{
+        text-align: center;
+        padding: 5px 0px;
+       }
+       .gridtwo>.item1>div>#one{
+        color:orange;
+        font-weight: bolder;
+       }
+       .gridtwo>.item1>div>#button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 8px;
+        padding-top: 5px;
+        
+       }
+       .gridtwo>.item1>div>#button>.button1{
+        background-color: rgb(54, 64, 54);
+        color: white;
+        padding: 8px 10px;
+        font-weight: bolder;
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+
+       }
+       .gridtwo>.item1>div>#button>.button2{
+        background-color: orange;
+        color: white;
+        padding: 8px 10px;
+        font-weight: bolder;
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+       }
+        .gridtwo>.item3{ 
+         border: 2px solid black;  
+        border-radius: 2px;
+       }
+       .gridtwo>.item3>.subitem3{
+        color: orangered;
+        background-color: rgba(159, 159, 159, 0.579);
+        border-radius: 5px 5px 0px 0px;
+        padding: 10px 10px;
+         border: 2px solid black; 
+        font-weight: bolder;  
+       }
+       .gridtwo>.item3>.subitem4{
+        background-color: white;
+         border-radius: 5px 5px 0px 0px; 
+        padding: 10px 8px;
+         border: 2px solid black; 
+         font-weight: bolder;   
+        font-size: 17px;
+        line-height: 25px;
+       }
+       .gridtwo>.item3>.subitem5{
+        display: flex;
+        justify-content: center;
+        
+       }
+       .gridtwo>.item3>.subitem5>button{
+        width:33.1%;
+        padding: 4px 0px;
+        border-radius: 3px;
+        border: none;
+       }
+       .gridtwo>.item3>.subitem5>#button1{
+        color:white;
+        background-color: rgb(54, 64, 54);
+        font-weight: bolder;
+
+
+       }
+       .gridtwo>.item3>.subitem5>#button2{
+        color:white;
+        background-color:orange;
+        font-weight: bolder;
+
+       }
+       .gridtwo>.item3>#subitem45{
+        height: 150px;
+       }
+       .gridtwo>.item3>#subitem46{
+        height: 225px;
+       }
+       .gridthree{
+        margin: 0px auto;
+         border: 2px solid black; 
+         width:100%; 
+         height: 205px; 
+        display: grid;
+        grid-template-columns:repeat(11,auto);
+         grid-template-rows: 6px; 
+        padding: 25px;
+        background-color: white;
+    
+       }
+       .gridthree>img{ 
+        height:60% ;
+        width: 75%;
+
+       }
+
+       .fixed>footer{
+        background-color: white;
+        box-shadow: 20px 0px 20px black;
+        position: fixed;
+        width: 100%;
+         padding-top: 10px; 
+        bottom: 0px;
+         margin: -20px 0px 10px 0px; 
+        display: flex;
+         column-gap:5% ;  
+       }
+       .gridfour>#gridfour1{
+         margin-right: 600px; 
+        color: orange;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        padding: 10px 0px;
+        cursor:pointer;
+         border: 2px solid black; 
+        display: flex;
+        column-gap: 5px;
+        
+       }
+       .gridfour>#gridfour1>#gridfour2{
+        color: grey;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        cursor:pointer;
+       }
+       .gridfour>#gridfour3{
+        display: flex;
+         border: 2px solid black; 
+        
+        font-weight: bolder;
+        letter-spacing: 1px;
+        padding: 8px 0px;
+        cursor:pointer;
+        margin-left: 400px;
+        column-gap: 8px;
+
+       }
+       .gridfour>#gridfour3>.num{
+        color: orange;
+        font-size: 16px;
+       }
+       .gridfour>#gridfour3>.num:hover{
+        color: rgb(204, 135, 7);
+       }
+
+
+
+       
+    </style>
+</head>
+<body style="background-color: rgb(242, 240, 240);">
+    <div class="fixed">
+<nav>
+    <div class="one">     
+        <h1>Jspider</h1>
+        <span>Traning & Development Center</span>
+    </div>
+    <div class="two">
+    <a class="home" href=""><i class="fa-solid fa-house"></i> Home</a>
+    <a href=""><i class="fa-solid fa-book"></i> Course</a>
+    <a href=""><i class="fa-solid fa-calendar-days"></i> Batch</a>
+    <a href=""><i class="fa-solid fa-boxes-stacked"></i> Corporates</a>
+    <a href=""><i class="fa-solid fa-map-location-dot"></i> Contacts</a>
+    <a href=""><i class="fa-solid fa-users"></i> Placement</a>
+    <a class="en" href=""><i class="fa-regular fa-pen-to-square"></i> Enquiry</a>
+    <a class="en" href=""><i class="fa-solid fa-square-phone"></i> +919686800700</a>
+    <a  class="en" href=""><i class="fa-solid fa-square-phone"></i> +919686800700</a>
+    </div>
+    
+</nav>
+<div class="three">
+    <div class="four">
+        <span class="spanred">Global<i class="fa-solid fa-caret-down"></i></span>
+        <div class="five">
+            <a href="">United Kingdom</a>
+            <a href="">United state</a>
+        </div>
+    </div>
+     <div class="four">
+            <span class="spandgreen">Online<i class="fa-solid fa-caret-down"></i></span>
+            <div class="five">
+                <a href="">Online</a>
+            </div>
+     </div>
+     <div class="four">
+        <span class="spandblue">Karnataka<i class="fa-solid fa-caret-down"></i></span>
+        <div class="five">
+            <a href="">Bengaluru - Basavanagudi</a>
+            <a href="">Bengaluru - Marathahalli</a>
+            <a href="">Mysore</a>
+            <a href="">Bengaluru - Rajajinagar</a>
+            <a href="">Bengaluru - Hebbal</a>
+            <a href="">Bengaluru - BTM Layout</a>
+        </div>
+    </div>
+     <div class="four">
+            <span class="spangrey">Maharashtra<i class="fa-solid fa-caret-down"></i></span>
+            <div class="five">
+                <a href="">Pune - Deccan Gymkhana</a>
+                <a href="">Pune - Hadapsar</a>
+                <a href="">Pune - Wakad</a>
+                <a href="">Navi - Mumbai</a>
+                <a href="">Mumbai - Thane</a>
+                <a href="">Vasai-Virar Mumbai</a>
+            </div>
+     </div>
+     <div class="four">
+        <span class="spangreen" >Tamilnadu<i class="fa-solid fa-caret-down"></i></span>
+        <div class="five">
+            <a href="">Chennai - Chromepet</a>
+            <a href="">Chennai - Vadapalani</a>
+            <a href="">Chennai - Velachery</a>
+        </div>
+    </div>
+     <div class="four">
+            <span class="spanblue">Talangana<i class="fa-solid fa-caret-down"></i></span>
+            <div class="five">
+                <a href="">Hyderabad - JNTU</a>
+                <a href="">Hyderabad - Punjagutta</a>
+                <a href="">Dilsukhnagar</a>
+            </div>
+     </div> 
+     <div class="four">
+        <span class="spangreen">Andra Pradesh<i class="fa-solid fa-caret-down"></i></span>
+        <div class="five">
+            <a href="">Tirupati</a>
+        </div>
+    </div>
+     <div class="four">
+            <span class="spanblue">Madhya Pradesh<i class="fa-solid fa-caret-down"></i></span>
+            <div class="five">
+                <a href=""></a>
+            </div>
+     </div>
+     <div class="four">
+        <span class="spangrey">Chandigarh<i class="fa-solid fa-caret-down"></i></span>
+        <div class="five">
+            <a href="">Chandigarh-online</a>
+        </div>
+    </div>
+     <div class="four">
+            <span class="spangreen">Harayana<i class="fa-solid fa-caret-down"></i></span>
+            <div class="five">
+                <a href="">Gurugram</a>
+            </div>
+     </div>
+     <div class="four">
+        <span class="spandblue">Odisha<i class="fa-solid fa-caret-down"></i></span>
+        <div class="five">
+            <a href="">Bhubaneswar</a>
+        </div>
+    </div>
+     <div class="four">
+            <span class="spanred">Utter Pradesh<i class="fa-solid fa-caret-down"></i></span>
+            <div class="five">
+                <a href="">Noida</a>
+            </div>
+     </div>
+     <div class="four">
+        <span class="spangrey">West Bengal<i class="fa-solid fa-caret-down"></i></span>
+        <div class="five">
+            <a href="">J-Kolkata</a>
+        </div>
+    </div>
+     <div class="four">
+            <span class="spandgreen">New Delhi<i class="fa-solid fa-caret-down"></i></span>
+            <div class="five">
+                <a href="">Delhi</a>
+            </div>
+     </div> 
+     <div class="four">
+        <span class="spandblue">Gujarat<i class="fa-solid fa-caret-down"></i></span>
+        <div class="five">
+            <a href="">Ahemdabad</a>
+        </div>
+    </div>
+     <div class="four">
+            <span class="spangrey">Kerala<i class="fa-solid fa-caret-down"></i></span>
+            <div class="five">
+                <a href="">Kochi-Kerala</a>
+            </div>
+     </div>
+</div>
+ <div class="mid">
+    <div class="midone" id="midone"><h4 align="center"><i class="fa-solid fa-earth-americas"></i> LARGEST SOFTWARE TRAINING ORGANISATION <i class="fa-solid fa-earth-americas"></i></h4>
+        <p>JSpiders is the world’s ace software course training organization with an aim to bridge the gap between the demands of the industry and the curriculum of educational institutions.</p>
+        <p>With centers across the Globe, the institute is a platform where young minds are given the opportunity to build successful careers.</p>
+        <p>”JSpiders is a place where businesses find talent and dreams take flight."</p>
+    </div>
+    <div class="midone" style="background-color: white;">
+        <h4 align="center" id="midh4"><i class="fa-solid fa-users"></i> PLACEMENT STATISTICS <i class="fa-solid fa-users"></i></h4>
+        <div id="midtwo"><a href=""><span><i class="fa-solid fa-arrow-up-wide-short"></i>266772</span> Placed Students who have throughout 60% aggregate</a></div>
+        <div id="midtwo"><a href=""><span><i class="fa-solid fa-arrow-up-wide-short"></i> 122972</span> Placed Students who have graduated in Non-IT</a></div>
+        <div id="midtwo"><a href=""><span><i class="fa-solid fa-arrow-up-wide-short"></i> 161728</span> Placed Students who have graduated in IT/CS/IS</a></div>
+        <div id="midtwo"><a href=""><span><i class="fa-solid fa-arrow-up-wide-short"></i>28152</span> Placed Students who have less than 60% aggregate in Degree</a></div>
+    </div>
+    <div class="midone" style="background-color: white;">
+        <h4 align="center" id="midh4"><i class="fa-solid fa-user-tie"></i>PLACED STUDENT<i class="fa-solid fa-user-tie"></i></h4>
+        <div id="midthree">Year</div>
+        <div id="midthreesub">
+            <div id="midthreesubsub" style="background-color: orange;">2025</div>
+            <div id="midthreesubsub" style="background-color: rgb(83, 82, 82);">2024</div>
+            <div id="midthreesubsub" style="background-color: rgb(83, 82, 82);">2023</div>
+            <div id="midthreesubsub" style="background-color: rgb(83, 82, 82);">2022</div>
+            <div id="midthreesubsub" style="background-color: rgb(83, 82, 82);">2021</div>
+        </div>
+        <div id="midthree">Degree</div>
+        <div id="midthreesub">
+            <div id="midthreesubsub" style="background-color: orange;">BE/BTECH</div>
+            <div id="midthreesubsub" style="background-color: orange;">BSC/BCA</div>
+        </div>
+        <div id="midthree">Masters</div>
+        <div id="midthreesub">
+            <div id="midthreesubsub" style="background-color: orange;">ME/MTECH</div>
+            <div id="midthreesubsub" style="background-color: orange;">MSC/MCA</div>
+        </div>
+        <div id="wanttohire" align="center" style="background-color: rgb(83, 82, 82);"><i class="fa-solid fa-users"></i> Want to hire our students?</div>
+
+    </div>
+ </div>
+ <div class="gridone">
+    <div> 
+        <div class="one"><i class="fa-solid fa-star"></i> No.1 <i class="fa-solid fa-star"></i></div>
+        <div class="two">Training Center in the World and also the Largest.</div>
+    </div>
+    <div>
+        <div class="one"><i class="fa-solid fa-star"></i> 3.1 Lakhs <i class="fa-solid fa-star"></i></div>
+        <div class="two">Students have been Placed, and still counting!</div>
+    </div>
+    <div>
+        <div class="one"><i class="fa-solid fa-star"></i> 4870+ <i class="fa-solid fa-star"></i></div>
+        <div class="two">Multinational companies hire from us, and the list is still growing.</div>
+    </div>
+    <div>
+        <div class="one"><i class="fa-solid fa-star"></i> 27-32 <i class="fa-solid fa-star"></i></div>
+        <div class="two">Companies conduct interviews every working day.</div>
+    </div>
+    <div>
+        <div class="one"><i class="fa-solid fa-star"></i> 2000-3000 <i class="fa-solid fa-star"></i></div>
+        <div class="two">Students attend interviews every day across companies.</div>
+    </div>
+    <div>
+        <div class="one"><i class="fa-solid fa-star"></i> 4000-6000 <i class="fa-solid fa-star"></i></div>
+        <div class="two">Students get placed in a Month across the Globe.</div>
+    </div>
+ </div>
+ <div class="gridtwo">
+    <div class="item1">
+        <div class="subitem1">Courses</div>
+        <div>
+            <p>We have the most complete range of software training courses needed by the professionals around the world.Please do contact us for any queries related to the courses.</p>
+            <p id="one">Here are some of the popular courses we offer.</p>
+            <p id="button">
+                <button class="button1">Java Full Stack</button>
+                <button class="button2">Software Testing</button>
+                <button class="button1">MEAN or MERN</button>
+                <button class="button2">Python Full Stack</button>
+            <p>
+        </div>
+    </div>
+    <div class="item3">
+        <div class="subitem3">Java Full Strack</div>
+        <div class="subitem4" >Java Full Stack course is more of job-oriented training which is designed as per current industry standards. You can start your career in IT industry with basic and advance skills. Course will be trained by top industry experts who have passion to train students and help them get job in IT industry or excel in IT industry.</div>
+        
+        <div class="subitem5">
+            <button id="button1"><i class="fa-solid fa-book-open"></i> Details</button>
+            <button id="button2"><i class="fa-solid fa-user-plus"></i> Enroll</button>
+            <button id="button1"><i class="fa-solid fa-calendar-day"></i> Batch</button>
+        </div>
+    </div>
+    <div class="item3">
+        <div class="subitem3">J2EE</div>
+        <div class="subitem4">J2EE course is more of job-oriented training which is designed as per current industry standards. You can start your career in IT industry with basic and advance skills. Course will be trained by top industry experts who have passion to train students and help them get job in IT industry or excel in IT industry.</div>
+        <div class="subitem5">
+            <button id="button1"><i class="fa-solid fa-book-open"></i> Details</button>
+            <button id="button2"><i class="fa-solid fa-user-plus"></i> Enroll</button>
+            <button id="button1"><i class="fa-solid fa-calendar-day"></i> Batch</button>
+        </div>
+    </div>
+    <div class="item3">
+        <div class="subitem3">MEAN Stack</div>
+        <div class="subitem4" id="subitem45">You will be ready to develop web application, mobile application & automation testing, Web designing and full-fledged application developing by end of this training.</div>
+        <div class="subitem5">
+            <button id="button1"><i class="fa-solid fa-book-open"></i> Details</button>
+            <button id="button2"><i class="fa-solid fa-user-plus"></i> Enroll</button>
+            <button id="button1"><i class="fa-solid fa-calendar-day"></i> Batch</button>
+        </div>
+    </div>
+    <div class="item3">
+        <div class="subitem3">MERN Stack</div>
+        <div class="subitem4" id="subitem46">Take your career as a web developer to the next level with this Full-Stack Web Developer Master’s Program, where you’ll become an expert at front and back-end JavaScript technologies of the most popular MEAN (Mongo DB, Express, Angular and Node.js) Stack or MERN (Mongo DB, Express, React and Node.js) Stack.</div>
+        <div class="subitem5">
+            <button id="button1"><i class="fa-solid fa-book-open"></i> Details</button>
+            <button id="button2"><i class="fa-solid fa-user-plus"></i> Enroll</button>
+            <button id="button1"><i class="fa-solid fa-calendar-day"></i> Batch</button>
+        </div>
+    </div>
+    <div class="item3">
+        <div class="subitem3">Andriod Development</div>
+        <div class="subitem4">Choices for work, gaming, 5G streaming and anything else. There are over 24,000 phones and tablets that run on Android globally. So, no matter what you’re looking for, there’s something for you. This Android training course is designed to quickly get you up to speed how to make Android apps for Android devices. ... You will be able to write simple GUI applications, use built-in widgets and components, work with the database to store data locally, and much more by the end of this Android training course</div>
+        <div class="subitem5">
+            <button id="button1"><i class="fa-solid fa-book-open"></i> Details</button>
+            <button id="button2"><i class="fa-solid fa-user-plus"></i> Enroll</button>
+            <button id="button1"><i class="fa-solid fa-calendar-day"></i> Batch</button>
+        </div>
+    </div>
+ </div>
+ <div class="gridthree">
+    <img src="deloitte.png" alt="">
+    <img src="Capgemini.png" alt="">
+    <img src="integramicrosystem.jpg" alt="">
+    <img src="sharp.png" alt="">
+    <img src="efi.jpeg" alt="">
+    <img src="arisglobal.jpg" alt="">
+    <img src="birlasoft.jpg" alt="">
+    <img src="3dplam.jpg" alt="">
+    <img src="allstate.jpg" alt="">
+    <img src="metricsteam.jpg" alt="">
+    
+
+ </div>
+
+ <footer class="gridfour">
+    <div id="gridfour1">
+        <a><i class="fa-regular fa-copyright"></i>2025JSpider</a>
+        <a id="gridfour2"><i class="fa-solid fa-user-shield"></i> Privacy</a>
+    </div>
+    <div id="gridfour3">
+        <a href=""><i class="fa-solid fa-bug"></i><i class="fa-solid fa-q"></i>Spider</a>
+        <a href=""><i class="fa-brands fa-python"></i>PySpider</a>
+        <a class="num" href=""> <i class="fa-solid fa-square-phone"></i>+919686800700</a>
+        <a class="num" href=""><i class="fa-solid fa-square-phone"></i> +916366110033</a>
+        <a class="num" href="">UK:<i class="fa-solid fa-square-phone"></i>+443332423091</a>
+        <a class="num" href=""><i class="fa-solid fa-envelope"></i>enquiry@jspiders.com</a>
+    </div>
+ </footer>
+</div>
+
+
+
+
+    
+</body>
+</html>
